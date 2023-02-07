@@ -3,7 +3,7 @@ from . import __version__ as app_version
 app_name = "library_management"
 app_title = "Book House"
 app_publisher = "Shubham Kuthe"
-app_description = "All books and navels are available in this house."
+app_description = "Library Management System"
 app_email = "shubham@gmail.com"
 app_license = "MIT"
 

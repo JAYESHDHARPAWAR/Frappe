@@ -9,7 +9,7 @@ from library_management import __version__ as version
 setup(
 	name="library_management",
 	version=version,
-	description="All books and navels are available in this house.",
+	description="Library Management System",
 	author="Shubham Kuthe",
 	author_email="shubham@gmail.com",
 	packages=find_packages(),
