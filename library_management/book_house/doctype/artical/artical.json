@@ -1,19 +1,23 @@
 {
+ "_comments": "[{\"comment\": \"Action Failed<br><br><pre><code>Traceback (most recent call last):\\n  File \\\"apps/frappe/frappe/mod...\", \"by\": \"Administrator\", \"name\": \"0818468698\"}]",
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:article_name",
  "creation": "2023-02-07 18:16:46.064048",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "author",
-  "image",
-  "status",
-  "description",
   "article_name",
+  "author",
   "isbn",
+  "image",
+  "column_break_czldo",
+  "status",
   "publisher",
+  "section_break_hieyz",
+  "description",
   "amended_from"
  ],
  "fields": [
@@ -26,14 +30,14 @@
   {
    "fieldname": "image",
    "fieldtype": "Attach Image",
+   "hidden": 1,
    "label": "Image"
   },
   {
-   "default": "Available",
    "fieldname": "status",
-   "fieldtype": "Read Only",
+   "fieldtype": "Select",
    "label": "Status",
-   "options": "Issued\nAvailabe"
+   "options": "\nIssued\nAvailabe"
   },
   {
    "fieldname": "description",
@@ -42,8 +46,10 @@
   },
   {
    "fieldname": "article_name",
-   "fieldtype": "Select",
-   "label": "Article Name"
+   "fieldtype": "Data",
+   "label": "Article Name",
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "isbn",
@@ -63,15 +69,24 @@
    "options": "Artical",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "column_break_czldo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_hieyz",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-02-08 12:21:44.725745",
+ "modified": "2023-02-08 15:48:01.090686",
  "modified_by": "Administrator",
  "module": "Book House",
  "name": "Artical",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
